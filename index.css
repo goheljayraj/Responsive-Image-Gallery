@@ -1,0 +1,142 @@
+span{
+    font-weight: 300;
+}
+h1{
+    padding-top: 5px;
+    text-align: center;
+    color: gray;
+    width: max-content;
+
+
+    margin: auto;
+
+
+
+}
+h1:hover{
+    color: yellow;
+}
+h1::after{
+    content: '';
+    width: 0%;
+    background: red;
+    display: block;
+    height: 2px;
+    margin: auto;
+}
+
+h1:hover::after{
+
+    width: 100%;
+    transition: 0.5s;
+
+}
+
+body{
+background-image: url("https://wallpaperboat.com/wp-content/uploads/2019/10/high-resolution-black-background-03.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: -0px;
+    padding: -0px;
+}
+
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    margin: auto;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: auto;
+
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 40.5%;
+
+
+}
+img{
+    width: 100%;
+    padding-bottom: 15px;
+    opacity: 0.7;
+    border-radius: 5px;
+
+}
+img:hover{
+    opacity: 1;
+}
+
+
+@media only screen and (max-width: 900px){
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        margin: auto;
+
+    }
+
+    .box{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex: auto;
+        width: 90%;
+
+
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        width: 43%;
+
+
+    }
+    img{
+        width: 100%;
+        padding-bottom: 15px;
+        opacity: 0.7;
+        border-radius: 5px;
+
+    }
+    img:hover{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 500px){
+    .box {
+
+        flex-direction: column;
+    }
+    .col{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+}
+
+
+
